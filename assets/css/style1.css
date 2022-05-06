@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Tahoma', Segoe UI, Verdana, sans-serif;
+    background-color: lightgrey;
+    margin: 0;
+}
+
+
+.header {
+    background-color: black;
+    padding: 60px;
+    color: lightyellow;
+    text-align: center;
+    ;
+}
+
+.header-img {
+    position: relative;
+    top: -75px;
+}
+
+#header-icon {
+    float: left;
+    margin-left: 0px 0px 0px 30px;
+    width: 125px;
+}
+
+header div img {
+    max-width: 120px;
+
+}
+
+.header nav {
+    margin-right: 20px;
+    float: right;
+    font-size: 15px;
+    color: lightyellow;
+}
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    padding-top: 35px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+p {
+    font-size: 15px;
+
+}
+
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+
+}
+
+.row {
+    display: -webkit-flex;
+    display: flex;
+    padding-top: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+
+.column {
+    padding: 10px;
+    padding-top: 30px;
+    height: 400px;
+    border-radius: 20px;
+    size-adjust: auto;
+    align-items: center;
+
+}
+
+section div h1 {
+    font-weight: bold;
+    font-size: 25px;
+    color: purple;
+    justify-content: center;
+    
+}
+
+section div h6{
+    padding-top: 25%;
+}
+
+section div h2 {
+    font-weight: bold;
+    font-size: 22px;
+    color: black;
+}
+
+.column.side {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-style: double;
+    border-color: purple;
+    text-align: center;
+    line-height: normal;
+    size-adjust: auto;
+    column-width: auto;
+    height: 700px;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+    
+}
+
+.column.middle {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    padding: 20px;
+    height: 700px;
+    width: 100%;
+    border-style: double;
+    border-color: purple;
+    text-align: center;
+    line-height: normal;
+    color: purple;
+    margin: auto;
+    padding: 10px;
+    padding-top: 100px;
+
+}
+
+#projimages {
+    transform: scale(.5, .5);
+}
+
+#projli {
+    transform: scale(.5,.5);
+}
+
+section div h4 {
+    font-weight: bold;
+    color: black;
+}
+
+section div h5 {
+    font-weight: bold;
+    color: purple;
+}
+
+.container-cm {
+    position: relative;
+    width: 50%;
+}
+
+.cmimage {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding-left: 25px;
+    padding-top: 40px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: purple;
+}
+
+.container-cm:hover .overlay {
+    opacity: 1;
+}
+
+.cmtext {
+    color: lightyellow;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.footer {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+@media (max-width: 600px) {
+    .row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
