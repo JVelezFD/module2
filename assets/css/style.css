@@ -2,15 +2,25 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', arial, sans-serif;
 
 }
 
+#gradbg{
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(.45deg, black, #2a1b3d, #44318d);
+    background-size: 300%, 100%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+
+
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', arial, sans-serif;
     margin: 0;
     overflow-x: hidden;
-    background-color: lightgray;
+    background-color: black;
 }
 
 #contactimg {
@@ -25,22 +35,28 @@ body{
     color: purple;
     line-height: normal;    
     border-style: double;
-    border-color: purple;
+    border-color: #d83f87;
 }
 
 .header h1 {
     font-size: 40px;
+    color: #a4b3b6;
 }
 
 .header p {
     font-size: 15px;
 }
 
+h3 {
+    color: #d83f87;
+    text-align: center;
+
+}
 .nbar {
     overflow: hidden;
     background-color: black;
     border-style: double;
-    border-color: purple;
+    border-color: #d83f87;
     position: sticky;
     top:0;
 }
@@ -48,10 +64,11 @@ body{
 .nbar a {
     float:left;
     display: block;
-    color:purple;
+    color:#a4b3b6;
     text-align: center;
     padding: 15px 20px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .nbar a.right {
@@ -59,21 +76,23 @@ body{
 }
 
 .nbar a:hover {
-    background-color: purple;
-    color: lightyellow;
+    background-color: #d83f87;
+    color: #a4b3b6;
+    font-weight: bold;
 }
 
 .nbar a.active {
-    background-color: purple;
-    color:greenyellow;
+    background-color: #d83f87;
+    color: #a4b3b6;
+    font-weight: bold;
 }
 
 div h2{
-    border-style: double;
-    border-color: purple;
+    border-color: #d83f87;
     text-align: center;
-    color: purple;
+    color: #a4b3b6;
     font-size: 20px;
+    text-decoration: underline;
 }
 
 
@@ -83,11 +102,14 @@ div h2{
 }
 
 p {
-    color: purple;
+    color: #d83f87;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 li{
-    color: purple;
+    color: #d83f87;
+    
 }
 
 .side {
@@ -96,26 +118,30 @@ li{
     padding: 20px;
     padding-top: 20px;
     border-style: double;
-    border-color: purple;
+    border-radius: 10%;
+    border-color: #d83f87;
+    background-color: #2a1b3d;
 }
 
 .main {
     flex: 70%;
-    background-color: lightgrey;
+    background-color: black;
     padding: 20px;
-    
+
 }
 
 #maingrid{
     grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
-    justify-content: left;
+    justify-content: center;
     align-items:center;
-    margin-top: 25px;
+    margin-top: 20px;
     display: grid;
     column-gap: 50px;
     row-gap: 50px;
     border-style: double;
-    border-color: purple;
+    border-color: #d83f87;
+    border-radius: 10%;
+    background-color: #2a1b3d;
     
 }
 #sidegrid{
@@ -140,29 +166,32 @@ li{
 height: 250px;
 
 }
+
 #imgborder{
     border-style: double;
-    border-color: purple;
+    border-color: #d83f87;
     border-radius: 10%;
 
 }
 
 div ul li { 
-list-style-type:none;
+list-style-type:circle;
+font-weight: bold;
 }
 
 .hovertext {
     position: relative;
-   
-  }
+
+}
   
   .hovertext:before {
     content: attr(data-hover);
     visibility: hidden;
     opacity: 0;
     width: 200px;
-    background-color: purple;
-    color: lightyellow;
+    background-color: #d83f87;
+    color: #a4b3b6;
+    font-weight: bold;
     text-align: center;
     border-radius: 5px;
     padding: 5px 0;
@@ -182,13 +211,13 @@ list-style-type:none;
 .footer {
     padding: 5px;
     text-align: center;
-    background: purple;
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    border-style: none;
-}
+    border-style: double;
+    border-color: #d83f87;
+    }
 #footerimg{
     height: 25px;
     padding-left: 50px;
@@ -202,7 +231,7 @@ footer h2{
 }
 
 #projgh{
-    height: 175px;
+    height: 170px;
     padding-left: 20px;
 }
 
@@ -217,4 +246,16 @@ footer h2{
     float: none;
     width: 100%
 }
+}
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
