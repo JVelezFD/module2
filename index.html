@@ -5,94 +5,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>J's Portfolio</title>
-    <link rel="stylesheet" href="/assets/css/reset.css">
-    <link rel="stylesheet" href="/assets/css/style1.css">
 </head>
 
 <body>
+
     <header class="header">
-        <div class="header-img">
-            <img id="header-icon" src="/assets/images/JVK.JPG" alt="J's Robot">
-        </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Hello</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/j-velez-fiserv/">My LinkedIn</a>
-                </li>
-                <li>
-                    <a
-                        href="https://drive.google.com/file/d/15yObUP2aK-ncIojno4sWBFgwKeRukSKC/view?usp=sharing">Resume</a>
-                </li>
-            </ul>
-        </nav>
+        <p>Hi I'm</p>
+        <h1>Jesus</h1>
+        <p>This is my portfolio</p>
     </header>
 
-    <section>
-        <div class="row">
-            <div class="column side"> <h6>Hi my name is</h6> 
-                <h1> Jesus Velez.</h1>
-                <h2> I build things for the present and future.</h2>
-                <p>I'm a software engineer bases in Atlanta, GA specializing in building websites, graphic design, apps,
-                    and
-                    everything in between.</p>
-            </div>
-            <div class="column middle">
-                <h3>Projects</h3>
-                <img id="projimages" ; src="/assets/images/placeholder.jpg" alt="Project 1 Coming Soon">
-                <img id="projimages" ; src="/assets/images/placeholder.jpg" alt="Project 2 Coming Soon">                
-                <h4>Coming Soon!</h4>
-                <img id= "projimages"; src="assets/images/Github-128.webp" alt="GitHub">
-            </div>
-            <div class="column side">
-                <div>
-                <h5>Contact Info</h5>
-                <div class="container-cm">
-                    <img id="projimages" src="/assets/images/phone-ringing-128.webp" alt="phone" class="cmimage">
-                    <div class="overlay">
-                        <div class="cmtext">808.690.6111</div>
-                    </div>
-                </div>
-                <div class="container-cm">
-                    <img id="projimages" src="/assets/images/icons_email-512.webp" alt="email" class="cmimage">
-                    <div class="overlay">
-                        <div class="cmtext">JVelez117@gmail.com</div>
-                    </div>
-                </div>
-                <div class="container-cm">
-                    <a href="https://www.linkedin.com/in/j-velez-fiserv/"> <img id="projli"
-                            src="/assets/images/Rounded_Linkedin2_svg-128.webp" alt="LinkedIn" class="cmimage">
-                </div>
-               
-            </div>
-            </div>
-        </div>
-        </div>
+    <nav class="nbar">
+        <a href="https://drive.google.com/file/d/15yObUP2aK-ncIojno4sWBFgwKeRukSKC/view?usp=sharing">
+            Resume
+        </a>
+        <a href="https://www.linkedin.com/in/j-velez-fiserv/">
+            My LinkedIn
+        </a>
+        <a class="active" href="#contact">
+            Contact
+        </a>
+        <a class="right" href="#mywork">
+            My Work
+        </a>
+    </nav>
 
-    </section>
-    <footer class="footer">
-        <nav>
+    <div class="row">
+        <div class="side">
+            <h2>
+                About Me
+            </h2>
+            <div class="myamimg">
+                <img id="imgborder" class="myabimg" src="./assets/images/JVK.JPG" alt="Robot Jesus">
+            </div>
+            <p>
+                I build things for the present and future.
+                I'm a software engineer based in Atlanta, GA specializing in building websites, graphic design,
+                apps, and everything in between.
+            </p>
+            <br>
+
+            <h2>Random Facts About Me</h2>
+            <br>
             <ul>
                 <li>
-                    <a href="#">Contact</a>
+                    I've seen the world while competing at gaming events
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/j-velez-fiserv/">My LinkedIn</a>
+                    Assisted in choreographing fight scenes in movies
                 </li>
                 <li>
-                    <a
-                        href="https://drive.google.com/file/d/15yObUP2aK-ncIojno4sWBFgwKeRukSKC/view?usp=sharing">Resume</a>
+                    Design/create custom gaming controllers
                 </li>
             </ul>
-        </nav>
+            <br>
 
-    </footer>
+            <h2 id="contact">
+                Contact Info
+            </h2>
+            <div id="sidegrid">
+                <div class="myamimg">
+                    <span class="hovertext" data-hover="808.690.6111"> <img id="contactimg"
+                            src="./assets/images/phone-symbol-of-an-auricular-inside-a-circle_icon-icons.com_56478.png"
+                            alt="Phone Number">
+                    </span>
+                </div>
+            </div>
+            <br>
+            <div class="myamimg">
+                <span class="hovertext" data-hover="Jvelez117@gmail.com"> <img id="contactimg"
+                        src="./assets/images/email.png" alt="Email">
+                </span>
+            </div>
+            <br>
+            <div class="myamimg">
+                <span class="hovertext" data-hover="click me"> <a
+                        href="https://www.linkedin.com/in/j-velez-fiserv/"><img id="contactimg"
+                            src="./assets/images/linkedin-logo-black-png-12.png" alt="LinkedIn"></a>
+                </span>
+            </div>
+
+        </div>
+        <div class="main">
+            <h2 id="mywork">My Work</h2>
+            <br>
+
+            <div id="maingrid">
+                <div class="myamimg">
+                    <span class="hovertext" data-hover=" Project 1 Coming Soon"> <img id="projimg"
+                            src="./assets/images/folderblackgithub_93133.png" alt="Project">
+                    </span>
+                </div>
+                <br>
+                <div class="myamimg">
+                    <span class="hovertext" data-hover=" Project 2 Coming Soon"> <img id="projimg"
+                            src="./assets/images/folderblackgithub_93133.png" alt="Project">
+                    </span>
+                </div>
+                <br>
+                <div class="myamimg">
+                    <span class="hovertext" data-hover=" Project 3 Coming Soon"> <img id="projimg"
+                            src="./assets/images/folderblackgithub_93133.png" alt="Project">
+                    </span>
+                </div>
+                <br>
+                <div class="myamimg">
+                    <span class="hovertext" data-hover=" Project 3 Coming Soon"> <img id="projimg"
+                            src="./assets/images/folderblackgithub_93133.png" alt="Project">
+                    </span>
+                </div>
+                <br>
+                <div class="myamimg">
+                    <span class="hovertext" data-hover=" Project 3 Coming Soon"> <img id="projimg"
+                            src="./assets/images/folderblackgithub_93133.png" alt="Project">
+                    </span>
+                </div>
+                <br>
+                <div class="myamimg">
+                    <span class="hovertext" data-hover=" My GitHub Launching Soon"> <img id="projgh"
+                            src="./assets/images/2504911.png" alt="Git Hub">
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <a href="https://www.linkedin.com/in/j-velez-fiserv/">
+                <img id="footerimg" src="./assets/images/linkedin-logo-black-png-12.png" alt="LinkedIn">
+            </a>
+
+            <a href="#contact"> <img id="footerimg" src="./assets/images/46646.png"
+                    alt="Contact Me">
+            </a>
+
+        </footer>
+
 </body>
 
 </html>

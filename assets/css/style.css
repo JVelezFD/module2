@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background-color: lightgray;
+}
+
+#contactimg {
+    height: 50px;
+    
+}
+
+.header {
+    padding: 50px;
+    text-align: center;
+    background-color:black;
+    color: purple;
+    line-height: normal;    
+    border-style: double;
+    border-color: purple;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.header p {
+    font-size: 15px;
+}
+
+.nbar {
+    overflow: hidden;
+    background-color: black;
+    border-style: double;
+    border-color: purple;
+    position: sticky;
+    top:0;
+}
+
+.nbar a {
+    float:left;
+    display: block;
+    color:purple;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+}
+
+.nbar a.right {
+    float: right;
+}
+
+.nbar a:hover {
+    background-color: purple;
+    color: lightyellow;
+}
+
+.nbar a.active {
+    background-color: purple;
+    color:greenyellow;
+}
+
+div h2{
+    border-style: double;
+    border-color: purple;
+    text-align: center;
+    color: purple;
+    font-size: 20px;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+p {
+    color: purple;
+}
+
+li{
+    color: purple;
+}
+
+.side {
+    flex:30%;
+    background-color: lightgray;
+    padding: 20px;
+    padding-top: 20px;
+    border-style: double;
+    border-color: purple;
+}
+
+.main {
+    flex: 70%;
+    background-color: lightgrey;
+    padding: 20px;
+    
+}
+
+#maingrid{
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+    justify-content: left;
+    align-items:center;
+    margin-top: 25px;
+    display: grid;
+    column-gap: 50px;
+    row-gap: 50px;
+    border-style: double;
+    border-color: purple;
+    
+}
+#sidegrid{
+    grid-template-columns: repeat(auto-fill, minmax(200px, 200px));
+    justify-content: left;
+    align-items:center;
+    margin-top: 10px;
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.myamimg {
+    object-fit: cover;
+    width: 100%;
+    padding: 20px;
+    object-position: center;
+
+}
+
+.myabimg {
+height: 250px;
+
+}
+#imgborder{
+    border-style: double;
+    border-color: purple;
+    border-radius: 10%;
+
+}
+
+div ul li { 
+list-style-type:none;
+}
+
+.hovertext {
+    position: relative;
+   
+  }
+  
+  .hovertext:before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 200px;
+    background-color: purple;
+    color: lightyellow;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 0;
+    transition: opacity 1s ease-in-out;
+  
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 110%;
+  }
+  
+  .hovertext:hover:before {
+    opacity: 1;
+    visibility: visible;
+  }
+
+.footer {
+    padding: 5px;
+    text-align: center;
+    background: purple;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-style: none;
+}
+#footerimg{
+    height: 25px;
+    padding-left: 50px;
+}
+footer h2{
+    border-style: none;
+}
+
+#projimg {
+  height: 200px;
+}
+
+#projgh{
+    height: 175px;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 1085px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px){
+.navbar a {
+    float: none;
+    width: 100%
+}
+}
