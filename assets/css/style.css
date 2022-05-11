@@ -9,10 +9,10 @@
 #gradbg{
     width: 100%;
     color: #fff;
-    background: linear-gradient(.45deg, black, #2a1b3d, #44318d);
-    background-size: 300%, 100%;
+    background: linear-gradient(.45deg, black, #2a1b3d, #44318d, #d83f87);
+    background-size: 300%,;
     position: relative;
-    animation: change 10s ease-in-out infinite;
+    animation: change 5s ease-in-out infinite alternate;
 }
 
 
